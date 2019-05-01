@@ -4,7 +4,7 @@ from flask import Blueprint, render_template
 # Vytvoří nový blueprint s názvem "about_bp" a uloží ho to proměnné blueprint
 blueprint = Blueprint('about_bp', __name__)
 
-# Zaregistruje funkci show_about() jako funkci, kterou má Flask zavolat, když 
+# Zaregistruje funkci show_about() jako funkci, kterou má Flask zavolat, když
 # uživatel otevře v prohlížeči stránku "/about"
 @blueprint.route('/about')
 def show_about():
